@@ -3,9 +3,10 @@ __author__ = 'JOM'
  
 import sys,getopt,csv,random,array,re,numpy,copy,math,functools
 from deap import base, creator, tools,algorithms
-
+# Underneath definitions are depending on the case being considered.
 rmpa={'D':0,'I':1,'P':2}
 mpa ={0:'D',1:'I',2:'P'}
+#
 gcst = {}
 gseq = {}
 gr   = []
@@ -56,7 +57,7 @@ def graph(trns):
       gr[mpa[i]] = [ mpa[j] for j in seq if trns[i][j] > 0 ]
    return(gr)
 
-def bestpath(ruta,coste,trns):
+def bestpath(ruta,coste,trns,pos):
    ctr = 0
    st  = len(coste)*[None]
    ost = copy.copy(st)
@@ -79,12 +80,25 @@ def bestpath(ruta,coste,trns):
       rrta= copy.copy(ruta)
       ctr = sum(numpy.asarray(coste[0:i])*trns[0][rmpa[ruta[0]]][rmpa[ruta[0]]])
       st[0:i] = i*[ruta[0]]
-      dt=trns[1][rmpa[ruta[0]]][rmpa[ruta[1]]]
+      # Paying attention to the variable duration of transitions because of 
+      #        previous status. Previous status duration is determined by 
+      #        i + max(-pos+1,0)
+      tdx = i + 1000. * max(1-pos,0)
+      idx = 0
+      fdx = 1.
+      for j in range(len(trns[2])):
+         if trns[2][j][0]==ruta[0] and trns[2][j][1]==ruta[1]:
+            if tdx >= trns[2][j][2] and tdx >= idx:
+               idx = trns[2][j][2]
+               fdx = trns[2][j][3]
+      dt=int(math.ceil(trns[1][rmpa[ruta[0]]][rmpa[ruta[1]]]*fdx))
+      if (i+dt) > len(coste):
+         return (10000000.,st)
       et=trns[0][rmpa[ruta[0]]][rmpa[ruta[1]]]
       ctr += sum(numpy.asarray(coste[i:i+dt])*et)
       st[i:i+dt] = dt * [''.join(ruta[0:2])]
       rrta.pop(0)
-      rctr,rst = bestpath(rrta,coste[i+dt:],trns)
+      rctr,rst = bestpath(rrta,coste[i+dt:],trns,pos)
       ctr += rctr
       st[i+dt:] = rst
       if ( mctr > ctr ):
@@ -102,7 +116,7 @@ def eval_seg(frm,to,pos,cs,ind,cost,dj,trns,fvp,gr):
       dt = int(math.ceil(dj[ind[1][pos]]/fvp[0][fi]))  # Duracion del job
       lfe= ind[0][pos]+dt
       lgp= ind[0][pos]
-      et = trns[0][len(trns)][len(trns)]*fvp[1][fi]
+      et = trns[0][len(trns[0])-1][len(trns[0])-1]*fvp[1][fi]
    fe    = lgp * [None]
    spath = lgp * [None]
    if frm == to:
@@ -121,7 +135,7 @@ def eval_seg(frm,to,pos,cs,ind,cost,dj,trns,fvp,gr):
       rutas=BFS(gr,frm,to,path_queue)
    mc=10000000.
    for ir in rutas:  # Ruta de menos coste para 'P'
-      cst,op = bestpath(ir,cost[cs:cs+lgp],trns)
+      cst,op = bestpath(ir,cost[cs:cs+lgp],trns,pos)
       if ( cst < mc ):
          mc=cst
          spath=op
@@ -133,11 +147,11 @@ def eval_seg(frm,to,pos,cs,ind,cost,dj,trns,fvp,gr):
 def calcula(ind,i,pos,cost,dj,trns,fvp):
    fi = ind[2][i]
    dt = int(math.ceil(dj[ind[1][i]]/fvp[0][fi]))  # Duracion del job
-   et = trns[0][len(trns)][len(trns)]*fvp[1][fi]
+   et = trns[0][len(trns[0])-1][len(trns[0])-1]*fvp[1][fi]
    tc = sum(numpy.asarray(cost[pos:pos+dt])*et)
    return (dt,tc)
 
-def evaluate(ind,cost,dj,trns,fvp):
+def evaluate(ind,cost,dj,trns,fvp,out):
    global gcst, gseq
    fe = len(cost)*[None]
    nc = len(ind[0])
@@ -191,6 +205,21 @@ def evaluate(ind,cost,dj,trns,fvp):
       fe[cs:len(cost)] = nsg
       tc += ptc
       cs = len(cost)
+   cstat = 'D'
+   cpos  = len(fe) -1
+   while fe[cpos] == 'D':
+      cpos -= 1
+   # Penalty control
+   pnlty = sorted(fvp[2],key=lambda x:x[0])
+   activ = 0
+   for i in range(len(pnlty)-1,-1,-1):
+      if activ > 0:
+         tc += pnlty[i][1]*(pnlty[i+1][0]-pnlty[i][0])
+      if cpos > pnlty[i][0] and activ==0:
+         tc += pnlty[i][1]*(cpos-pnlty[i][0])
+         activ = 1
+   if out > 0:
+      return(fe)
    return (tc),
 
 def checkBounds(T,dj,fvp):
@@ -328,7 +357,6 @@ def main():
         else:
 	   mcd.append([int(x) for x in lista])
 
-   trns = [mce,mcd]  # Transiciones: Mat energia/pasoT + Mat duracion
    gr=graph(mcd) # GR sera usado en evaluaciones
    nv=int(leerlineacsv(f))   # Leemos el numero de factores de velocidad
    lista = leerlineacsv(f)
@@ -343,7 +371,26 @@ def main():
    else:
 	fp=[float(x) for x in lista]
     
-   fvp = [fv,fp]
+   ntr = int (leerlineacsv(f))    # Leemos el numero de transiciones
+   vtr=[]
+   for i in range(ntr):
+    	lista = leerlineacsv(f)
+    	if len(lista) < 4:
+	   print "No hay componentes suficientes TrVar ",lista
+        else:
+	   vtr.append([lista[0],lista[1],int(lista[2]),float(lista[3])])
+
+   npy = int (leerlineacsv(f))    # Leemos el numero de penalties
+   pty =[]
+   for i in range(npy):
+    	lista = leerlineacsv(f)
+    	if len(lista) < 2:
+	   print "No hay componentes suficientes Pnlty ",lista
+        else:
+	   pty.append([int(lista[0]),float(lista[1])])
+
+   trns = [mce,mcd,vtr]  # Transiciones: Mat energia/pasoT + Mat duracion
+   fvp = [fv,fp,pty]
    # print njobs, T, nest, nv
    # print "DJ:",dj
    # print "T :",et
@@ -361,7 +408,7 @@ def main():
    toolbox.register("individual", tools.initCycle, creator.Individual,(toolbox.waiting,toolbox.indices,toolbox.speed), 1)
    toolbox.register("population", tools.initRepeat, list, toolbox.individual)
    # Operator registering
-   toolbox.register("evaluate", evaluate,et,dj,trns,fvp)
+   toolbox.register("evaluate", evaluate,et,dj,trns,fvp,0)
    toolbox.register("mate", crossover,pcrs)
    toolbox.register("mutate", tools.mutUniformInt,0,(T-sum(dj)), indpb=pmut)
    toolbox.register("select", tools.selTournament, tournsize=3)
@@ -369,7 +416,7 @@ def main():
    toolbox.decorate("mutate", checkBounds(T,dj,fvp))
    #
    pop = toolbox.population(n=size)
-   fitnesses = map(functools.partial(evaluate, cost=et,dj=dj,trns=trns,fvp=fvp),pop)
+   fitnesses = map(functools.partial(evaluate, cost=et,dj=dj,trns=trns,fvp=fvp,out=0),pop)
    for ind, fit in zip(pop, fitnesses):
        ind.fitness.values = fit
    #
@@ -395,7 +442,7 @@ def main():
     
         # Evaluate the individuals with an invalid fitness
         invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
-        fitnesses = map(functools.partial(evaluate, cost=et,dj=dj,trns=trns,fvp=fvp),invalid_ind)
+        fitnesses = map(functools.partial(evaluate, cost=et,dj=dj,trns=trns,fvp=fvp,out=0),invalid_ind)
         for ind, fit in zip(invalid_ind, fitnesses):
             ind.fitness.values = fit
         
@@ -416,6 +463,7 @@ def main():
    print "-- End of (successful) evolution --"
    best_ind = tools.selBest(pop, 1)[0]
    print "Best individual is %s, %s" % (best_ind, best_ind.fitness.values)
+   print "Phenotype: %s \n" % evaluate(best_ind,et,dj,trns,fvp,1)
 
 if __name__ == "__main__":
     main()

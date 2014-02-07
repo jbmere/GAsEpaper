@@ -19,3 +19,14 @@
 1 1.5 2 2.5
 3 5.1 7.5 10.
 #
+5 # Numero de entradas de pasos de variación de arranque
+D, I, 5, 1.5
+D, I, 25, 2.
+D,P, 3, 1.1
+D,P, 7, 1.8
+D,P, 15, 2.2
+#
+# Factor de penalizacion
+2 # Numero de lineas
+45,3.0  # A partir de 45 pasos de tiempo 3 EUR por cada paso retrasado
+55,4.5
