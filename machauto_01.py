@@ -57,11 +57,22 @@ def graph(trns):
       gr[mpa[i]] = [ mpa[j] for j in seq if trns[i][j] > 0 ]
    return(gr)
 
-def bestpath(ruta,coste,trns,pos):
+def trans_len(dps,ruta,trns):  # Duration for the previous state, route ...
+   tdx = dps
+   idx = 0
+   fdx = 1.
+   for j in range(len(trns[2])):
+      if trns[2][j][0]==ruta[0] and trns[2][j][1]==ruta[1]:
+         if tdx >= trns[2][j][2] and tdx >= idx:
+            idx = trns[2][j][2]
+            fdx = trns[2][j][3]
+   return fdx
+
+def bestpath(ruta,coste,trns,dps):
    ctr = 0
    st  = len(coste)*[None]
    ost = copy.copy(st)
-   if len(ruta) == 1:
+   if len(ruta) == 1:  # Becasue of the recursivity: Last step
       st  = len(coste)*[ruta[0]]
       ctr = sum(numpy.asarray(coste) * trns[0][rmpa[ruta[0]]][rmpa[ruta[0]]])
       return (ctr,st)
@@ -70,8 +81,11 @@ def bestpath(ruta,coste,trns,pos):
    seq = len(coste)*[None]
    pot = copy.copy(seq)
    for i in range(ns):
-      dtr += trns[1][rmpa[ruta[i]]][rmpa[ruta[i+1]]]
-   lstp= len(coste) - dtr # lstp pasos para distribuir
+      fdx = 1.
+      if i == 0:
+         fdx = trans_len(dps,ruta,trns)
+      dtr += trns[1][rmpa[ruta[i]]][rmpa[ruta[i+1]]]*fdx
+   lstp= int(len(coste) - dtr) # lstp pasos para distribuir
    mctr= 10000000.
    if lstp < 0:
       return (mctr,ost)
@@ -80,33 +94,22 @@ def bestpath(ruta,coste,trns,pos):
       rrta= copy.copy(ruta)
       ctr = sum(numpy.asarray(coste[0:i])*trns[0][rmpa[ruta[0]]][rmpa[ruta[0]]])
       st[0:i] = i*[ruta[0]]
-      # Paying attention to the variable duration of transitions because of 
-      #        previous status. Previous status duration is determined by 
-      #        i + max(-pos+1,0)
-      tdx = i + 1000. * max(1-pos,0)
-      idx = 0
-      fdx = 1.
-      for j in range(len(trns[2])):
-         if trns[2][j][0]==ruta[0] and trns[2][j][1]==ruta[1]:
-            if tdx >= trns[2][j][2] and tdx >= idx:
-               idx = trns[2][j][2]
-               fdx = trns[2][j][3]
+      fdx = trans_len(dps+i,ruta,trns)
       dt=int(math.ceil(trns[1][rmpa[ruta[0]]][rmpa[ruta[1]]]*fdx))
-      if (i+dt) > len(coste):
-         return (10000000.,st)
-      et=trns[0][rmpa[ruta[0]]][rmpa[ruta[1]]]
-      ctr += sum(numpy.asarray(coste[i:i+dt])*et)
-      st[i:i+dt] = dt * [''.join(ruta[0:2])]
-      rrta.pop(0)
-      rctr,rst = bestpath(rrta,coste[i+dt:],trns,pos)
-      ctr += rctr
-      st[i+dt:] = rst
-      if ( mctr > ctr ):
-         mctr=ctr
-         ost = st
+      if (i+dt) <= len(coste):  # When adptation is still valid
+         et=trns[0][rmpa[ruta[0]]][rmpa[ruta[1]]]
+         ctr += sum(numpy.asarray(coste[i:i+dt])*et)
+         st[i:i+dt] = dt * [''.join(ruta[0:2])]
+         rrta.pop(0)
+         rctr,rst = bestpath(rrta,coste[i+dt:],trns,0)
+         ctr += rctr
+         st[i+dt:] = rst
+         if ( mctr > ctr ):
+            mctr=ctr
+            ost = st
    return(mctr,ost)
          
-def eval_seg(frm,to,pos,cs,ind,cost,dj,trns,fvp,gr):
+def eval_seg(frm,to,pos,dps,cs,ind,cost,dj,trns,fvp,gr):
    path_queue = MyQUEUE()
    tc = 0
    lfe= len(cost) - cs
@@ -135,7 +138,7 @@ def eval_seg(frm,to,pos,cs,ind,cost,dj,trns,fvp,gr):
       rutas=BFS(gr,frm,to,path_queue)
    mc=10000000.
    for ir in rutas:  # Ruta de menos coste para 'P'
-      cst,op = bestpath(ir,cost[cs:cs+lgp],trns,pos)
+      cst,op = bestpath(ir,cost[cs:cs+lgp],trns,dps)
       if ( cst < mc ):
          mc=cst
          spath=op
@@ -177,7 +180,14 @@ def evaluate(ind,cost,dj,trns,fvp,out):
          fe[cs:cs+len(gseq[idx])] = gseq[idx]
          cs += len(gseq[idx])
       else:
-         ncs,ptc,nsg   = eval_seg(frm,to,i,cs,ind,cost,dj,trns,fvp,gr)
+         if i == 0:
+            dps = 2*len(cost)
+         else:
+            imss=1;
+            while imss < cs and fe[cs-imss] == fe[cs]:
+               imss += 1
+            dps = imss
+         ncs,ptc,nsg   = eval_seg(frm,to,i,dps,cs,ind,cost,dj,trns,fvp,gr)
          gcst[idx]     = ptc
          gseq[idx]     = nsg
          fe[cs:cs+ncs] = nsg
@@ -186,7 +196,7 @@ def evaluate(ind,cost,dj,trns,fvp,out):
       if cs >= len(cost):
          return (10000000.),
       fe[cs] = 'P'
-      idt,itc=calcula(ind,i,pos,cost,dj,trns,fvp)
+      idt,itc=calcula(ind,i,cs,cost,dj,trns,fvp)
       if cs+idt >= len(cost):
          return (10000000.),
       fe[cs:cs+idt] = idt * ['P']
@@ -199,7 +209,12 @@ def evaluate(ind,cost,dj,trns,fvp,out):
       fe[cs:len(cost)] = gseq[idx]
       cs = len(cost)
    else:
-      ncs,ptc,nsg = eval_seg(fe[cs],'D',-1,cs,ind,cost,dj,trns,fvp,gr)
+      dps=0
+      imss=1;
+      while imss < cs and fe[cs-imss] == fe[cs]:
+         imss += 1
+         dps = imss
+      ncs,ptc,nsg = eval_seg(fe[cs],'D',-1,dps,cs,ind,cost,dj,trns,fvp,gr)
       gcst[idx]     = ptc
       gseq[idx]     = nsg
       fe[cs:len(cost)] = nsg
@@ -257,9 +272,7 @@ def leerlineacsv(df):
       line = line.strip(' \t\n')
       line = re.sub('#.*$','',line)
       newl = my_split(line,[' ',',',';',':'])
-      if len(newl) == 1:
-	    return(newl[0])
-      if len(newl) > 1:
+      if len(newl) > 0:
 	    return(newl)
 
 def crossover(ind1,ind2,alpha):
@@ -326,21 +339,21 @@ def main():
       
    # Comenzamos a leer el csv
    f = open ( ifile, 'r')
-   njobs = int (leerlineacsv(f))    # Numero de jobs a procesar
+   njobs = int((leerlineacsv(f))[0])    # Numero de jobs a procesar
    lista = leerlineacsv(f)
    if len(lista) < njobs:
 	print "No hay componentes suficientes DJ ",lista
    else:
 	dj=[int(x) for x in lista]  # Duracion nominal de cada job
 
-   T = int(leerlineacsv(f))          # Leemos el total de pasos de tiempo
+   T = int((leerlineacsv(f))[0])    # Leemos el total de pasos de tiempo
    lista = leerlineacsv(f)
    if len(lista) < T:
 	print "No hay componentes suficientes Et ",lista
    else:
 	et=[float(x) for x in lista] # Leemos el coste en cada paso de tiempo
 
-   nest = int (leerlineacsv(f))    # Leemos el numero de estados
+   nest = int((leerlineacsv(f))[0])    # Leemos el numero de estados
    mce=[]
    for i in range(nest):
     	lista = leerlineacsv(f)
@@ -358,7 +371,7 @@ def main():
 	   mcd.append([int(x) for x in lista])
 
    gr=graph(mcd) # GR sera usado en evaluaciones
-   nv=int(leerlineacsv(f))   # Leemos el numero de factores de velocidad
+   nv=int((leerlineacsv(f))[0])  # Leemos el numero de factores de velocidad
    lista = leerlineacsv(f)
    if len(lista) < nv:
 	print "No hay componentes suficientes Fv ",lista
@@ -371,7 +384,7 @@ def main():
    else:
 	fp=[float(x) for x in lista]
     
-   ntr = int (leerlineacsv(f))    # Leemos el numero de transiciones
+   ntr = int((leerlineacsv(f))[0])    # Leemos el numero de transiciones
    vtr=[]
    for i in range(ntr):
     	lista = leerlineacsv(f)
@@ -380,7 +393,7 @@ def main():
         else:
 	   vtr.append([lista[0],lista[1],int(lista[2]),float(lista[3])])
 
-   npy = int (leerlineacsv(f))    # Leemos el numero de penalties
+   npy = int((leerlineacsv(f))[0])    # Leemos el numero de penalties
    pty =[]
    for i in range(npy):
     	lista = leerlineacsv(f)
@@ -448,20 +461,24 @@ def main():
         
         print "  Evaluated %i individuals" % len(invalid_ind)
         # The population is entirely replaced by the offspring
-        pop[:] = offspring
+        pop[0:9] = tools.selBest(pop,10)
+        pop[10:] = offspring[0:min(len(offspring),size)]
         # Gather all the fitnesses in one list and print the stats
         fits = [ind.fitness.values[0] for ind in pop]
-        length = len(pop)
-        mean = sum(fits) / length
-        sum2 = sum(x*x for x in fits)
-        std = abs(sum2 / length - mean**2)**0.5
         print "  Min %s" % min(fits)
-        print "  Max %s" % max(fits)
-        print "  Avg %s" % mean
-        print "  Std %s" % std
     
    print "-- End of (successful) evolution --"
    best_ind = tools.selBest(pop, 1)[0]
+   length = len(pop)
+   mean = sum(fits) / length
+   sum2 = sum(x*x for x in fits)
+   std = abs(sum2 / length - mean**2)**0.5
+   print " ======================== "
+   print "  Min %s" % min(fits)
+   print "  Max %s" % max(fits)
+   print "  Avg %s" % mean
+   print "  Std %s" % std
+   print " ======================== "
    print "Best individual is %s, %s" % (best_ind, best_ind.fitness.values)
    print "Phenotype: %s \n" % evaluate(best_ind,et,dj,trns,fvp,1)
 

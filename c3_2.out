@@ -1,0 +1,611 @@
+Margen:  18
+-- Generation 0 --
+  Evaluated 191 individuals
+  Min 255.0
+-- Generation 1 --
+  Evaluated 193 individuals
+  Min 250.0
+-- Generation 2 --
+  Evaluated 187 individuals
+  Min 250.0
+-- Generation 3 --
+  Evaluated 180 individuals
+  Min 207.0
+-- Generation 4 --
+  Evaluated 192 individuals
+  Min 207.0
+-- Generation 5 --
+  Evaluated 185 individuals
+  Min 207.0
+-- Generation 6 --
+  Evaluated 190 individuals
+  Min 207.0
+-- Generation 7 --
+  Evaluated 188 individuals
+  Min 207.0
+-- Generation 8 --
+  Evaluated 181 individuals
+  Min 207.0
+-- Generation 9 --
+  Evaluated 184 individuals
+  Min 207.0
+-- Generation 10 --
+  Evaluated 181 individuals
+  Min 207.0
+-- Generation 11 --
+  Evaluated 186 individuals
+  Min 207.0
+-- Generation 12 --
+  Evaluated 181 individuals
+  Min 207.0
+-- Generation 13 --
+  Evaluated 175 individuals
+  Min 207.0
+-- Generation 14 --
+  Evaluated 176 individuals
+  Min 203.0
+-- Generation 15 --
+  Evaluated 187 individuals
+  Min 203.0
+-- Generation 16 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 17 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 18 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 19 --
+  Evaluated 187 individuals
+  Min 203.0
+-- Generation 20 --
+  Evaluated 183 individuals
+  Min 203.0
+-- Generation 21 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 22 --
+  Evaluated 178 individuals
+  Min 203.0
+-- Generation 23 --
+  Evaluated 184 individuals
+  Min 203.0
+-- Generation 24 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 25 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 26 --
+  Evaluated 182 individuals
+  Min 203.0
+-- Generation 27 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 28 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 29 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 30 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 31 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 32 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 33 --
+  Evaluated 183 individuals
+  Min 203.0
+-- Generation 34 --
+  Evaluated 194 individuals
+  Min 203.0
+-- Generation 35 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 36 --
+  Evaluated 191 individuals
+  Min 203.0
+-- Generation 37 --
+  Evaluated 191 individuals
+  Min 203.0
+-- Generation 38 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 39 --
+  Evaluated 194 individuals
+  Min 203.0
+-- Generation 40 --
+  Evaluated 192 individuals
+  Min 203.0
+-- Generation 41 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 42 --
+  Evaluated 192 individuals
+  Min 203.0
+-- Generation 43 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 44 --
+  Evaluated 195 individuals
+  Min 203.0
+-- Generation 45 --
+  Evaluated 193 individuals
+  Min 203.0
+-- Generation 46 --
+  Evaluated 178 individuals
+  Min 203.0
+-- Generation 47 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 48 --
+  Evaluated 194 individuals
+  Min 203.0
+-- Generation 49 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 50 --
+  Evaluated 181 individuals
+  Min 203.0
+-- Generation 51 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 52 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 53 --
+  Evaluated 178 individuals
+  Min 203.0
+-- Generation 54 --
+  Evaluated 178 individuals
+  Min 203.0
+-- Generation 55 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 56 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 57 --
+  Evaluated 195 individuals
+  Min 203.0
+-- Generation 58 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 59 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 60 --
+  Evaluated 169 individuals
+  Min 203.0
+-- Generation 61 --
+  Evaluated 196 individuals
+  Min 203.0
+-- Generation 62 --
+  Evaluated 183 individuals
+  Min 203.0
+-- Generation 63 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 64 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 65 --
+  Evaluated 195 individuals
+  Min 203.0
+-- Generation 66 --
+  Evaluated 181 individuals
+  Min 203.0
+-- Generation 67 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 68 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 69 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 70 --
+  Evaluated 181 individuals
+  Min 203.0
+-- Generation 71 --
+  Evaluated 181 individuals
+  Min 203.0
+-- Generation 72 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 73 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 74 --
+  Evaluated 182 individuals
+  Min 203.0
+-- Generation 75 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 76 --
+  Evaluated 187 individuals
+  Min 203.0
+-- Generation 77 --
+  Evaluated 182 individuals
+  Min 203.0
+-- Generation 78 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 79 --
+  Evaluated 194 individuals
+  Min 203.0
+-- Generation 80 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 81 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 82 --
+  Evaluated 182 individuals
+  Min 203.0
+-- Generation 83 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 84 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 85 --
+  Evaluated 183 individuals
+  Min 203.0
+-- Generation 86 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 87 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 88 --
+  Evaluated 184 individuals
+  Min 203.0
+-- Generation 89 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 90 --
+  Evaluated 175 individuals
+  Min 203.0
+-- Generation 91 --
+  Evaluated 198 individuals
+  Min 203.0
+-- Generation 92 --
+  Evaluated 178 individuals
+  Min 203.0
+-- Generation 93 --
+  Evaluated 199 individuals
+  Min 203.0
+-- Generation 94 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 95 --
+  Evaluated 195 individuals
+  Min 203.0
+-- Generation 96 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 97 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 98 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 99 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 100 --
+  Evaluated 174 individuals
+  Min 203.0
+-- Generation 101 --
+  Evaluated 178 individuals
+  Min 203.0
+-- Generation 102 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 103 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 104 --
+  Evaluated 191 individuals
+  Min 203.0
+-- Generation 105 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 106 --
+  Evaluated 184 individuals
+  Min 203.0
+-- Generation 107 --
+  Evaluated 183 individuals
+  Min 203.0
+-- Generation 108 --
+  Evaluated 184 individuals
+  Min 203.0
+-- Generation 109 --
+  Evaluated 183 individuals
+  Min 203.0
+-- Generation 110 --
+  Evaluated 198 individuals
+  Min 203.0
+-- Generation 111 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 112 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 113 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 114 --
+  Evaluated 187 individuals
+  Min 203.0
+-- Generation 115 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 116 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 117 --
+  Evaluated 193 individuals
+  Min 203.0
+-- Generation 118 --
+  Evaluated 178 individuals
+  Min 203.0
+-- Generation 119 --
+  Evaluated 191 individuals
+  Min 203.0
+-- Generation 120 --
+  Evaluated 194 individuals
+  Min 203.0
+-- Generation 121 --
+  Evaluated 197 individuals
+  Min 203.0
+-- Generation 122 --
+  Evaluated 171 individuals
+  Min 203.0
+-- Generation 123 --
+  Evaluated 169 individuals
+  Min 203.0
+-- Generation 124 --
+  Evaluated 184 individuals
+  Min 203.0
+-- Generation 125 --
+  Evaluated 181 individuals
+  Min 203.0
+-- Generation 126 --
+  Evaluated 197 individuals
+  Min 203.0
+-- Generation 127 --
+  Evaluated 183 individuals
+  Min 203.0
+-- Generation 128 --
+  Evaluated 181 individuals
+  Min 203.0
+-- Generation 129 --
+  Evaluated 195 individuals
+  Min 203.0
+-- Generation 130 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 131 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 132 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 133 --
+  Evaluated 183 individuals
+  Min 203.0
+-- Generation 134 --
+  Evaluated 191 individuals
+  Min 203.0
+-- Generation 135 --
+  Evaluated 182 individuals
+  Min 203.0
+-- Generation 136 --
+  Evaluated 191 individuals
+  Min 203.0
+-- Generation 137 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 138 --
+  Evaluated 184 individuals
+  Min 203.0
+-- Generation 139 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 140 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 141 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 142 --
+  Evaluated 174 individuals
+  Min 203.0
+-- Generation 143 --
+  Evaluated 197 individuals
+  Min 203.0
+-- Generation 144 --
+  Evaluated 187 individuals
+  Min 203.0
+-- Generation 145 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 146 --
+  Evaluated 194 individuals
+  Min 203.0
+-- Generation 147 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 148 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 149 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 150 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 151 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 152 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 153 --
+  Evaluated 193 individuals
+  Min 203.0
+-- Generation 154 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 155 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 156 --
+  Evaluated 175 individuals
+  Min 203.0
+-- Generation 157 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 158 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 159 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 160 --
+  Evaluated 191 individuals
+  Min 203.0
+-- Generation 161 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 162 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 163 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 164 --
+  Evaluated 175 individuals
+  Min 203.0
+-- Generation 165 --
+  Evaluated 181 individuals
+  Min 203.0
+-- Generation 166 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 167 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 168 --
+  Evaluated 187 individuals
+  Min 203.0
+-- Generation 169 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 170 --
+  Evaluated 176 individuals
+  Min 203.0
+-- Generation 171 --
+  Evaluated 179 individuals
+  Min 203.0
+-- Generation 172 --
+  Evaluated 193 individuals
+  Min 203.0
+-- Generation 173 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 174 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 175 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 176 --
+  Evaluated 189 individuals
+  Min 203.0
+-- Generation 177 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 178 --
+  Evaluated 194 individuals
+  Min 203.0
+-- Generation 179 --
+  Evaluated 187 individuals
+  Min 203.0
+-- Generation 180 --
+  Evaluated 190 individuals
+  Min 203.0
+-- Generation 181 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 182 --
+  Evaluated 186 individuals
+  Min 203.0
+-- Generation 183 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 184 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 185 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 186 --
+  Evaluated 184 individuals
+  Min 203.0
+-- Generation 187 --
+  Evaluated 191 individuals
+  Min 203.0
+-- Generation 188 --
+  Evaluated 181 individuals
+  Min 203.0
+-- Generation 189 --
+  Evaluated 188 individuals
+  Min 203.0
+-- Generation 190 --
+  Evaluated 184 individuals
+  Min 203.0
+-- Generation 191 --
+  Evaluated 177 individuals
+  Min 203.0
+-- Generation 192 --
+  Evaluated 182 individuals
+  Min 203.0
+-- Generation 193 --
+  Evaluated 187 individuals
+  Min 203.0
+-- Generation 194 --
+  Evaluated 182 individuals
+  Min 203.0
+-- Generation 195 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 196 --
+  Evaluated 180 individuals
+  Min 203.0
+-- Generation 197 --
+  Evaluated 185 individuals
+  Min 203.0
+-- Generation 198 --
+  Evaluated 178 individuals
+  Min 203.0
+-- Generation 199 --
+  Evaluated 181 individuals
+  Min 203.0
+-- End of (successful) evolution --
+ ======================== 
+  Min 203.0
+  Max 10000360.0
+  Avg 95452.852381
+  Std 971254.633044
+ ======================== 
+Best individual is [[6, 0, 0, 5, 0], [4, 3, 0, 1, 2], [0, 0, 0, 0, 0]], (203.0,)
+Phenotype: ['D', 'D', 'D', 'D', 'DP', 'DP', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'PD', 'D', 'D', 'D', 'DP', 'P', 'P', 'P', 'P', 'P', 'P', 'PD', 'D', 'D', 'D', 'D', 'D', 'D'] 
+
