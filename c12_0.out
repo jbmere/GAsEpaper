@@ -1,411 +1,411 @@
 Margen:  35
 -- Generation 0 --
-  Evaluated 369 individuals
-  Min 1342.0 
-  Valids: 364 
+  Evaluated 467 individuals
+  Min 1331.0 
+  Valids: 462 
 -- Generation 1 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 382 
+  Evaluated 485 individuals
+  Min 1331.0 
+  Valids: 479 
 -- Generation 2 --
-  Evaluated 377 individuals
-  Min 1342.0 
-  Valids: 374 
+  Evaluated 467 individuals
+  Min 1331.0 
+  Valids: 464 
 -- Generation 3 --
-  Evaluated 382 individuals
-  Min 1342.0 
-  Valids: 380 
+  Evaluated 476 individuals
+  Min 1331.0 
+  Valids: 476 
 -- Generation 4 --
-  Evaluated 394 individuals
-  Min 1342.0 
-  Valids: 393 
+  Evaluated 477 individuals
+  Min 1331.0 
+  Valids: 475 
 -- Generation 5 --
-  Evaluated 381 individuals
-  Min 1342.0 
-  Valids: 381 
+  Evaluated 470 individuals
+  Min 1331.0 
+  Valids: 470 
 -- Generation 6 --
-  Evaluated 386 individuals
-  Min 1342.0 
-  Valids: 385 
+  Evaluated 485 individuals
+  Min 1331.0 
+  Valids: 485 
 -- Generation 7 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 383 
+  Evaluated 472 individuals
+  Min 1331.0 
+  Valids: 472 
 -- Generation 8 --
-  Evaluated 386 individuals
-  Min 1342.0 
-  Valids: 386 
+  Evaluated 470 individuals
+  Min 1331.0 
+  Valids: 470 
 -- Generation 9 --
-  Evaluated 389 individuals
-  Min 1342.0 
-  Valids: 389 
+  Evaluated 469 individuals
+  Min 1331.0 
+  Valids: 469 
 -- Generation 10 --
-  Evaluated 390 individuals
-  Min 1342.0 
-  Valids: 390 
+  Evaluated 480 individuals
+  Min 1331.0 
+  Valids: 480 
 -- Generation 11 --
-  Evaluated 383 individuals
-  Min 1342.0 
-  Valids: 383 
+  Evaluated 485 individuals
+  Min 1331.0 
+  Valids: 485 
 -- Generation 12 --
-  Evaluated 391 individuals
-  Min 1342.0 
-  Valids: 390 
+  Evaluated 476 individuals
+  Min 1331.0 
+  Valids: 476 
 -- Generation 13 --
-  Evaluated 383 individuals
-  Min 1342.0 
-  Valids: 383 
+  Evaluated 483 individuals
+  Min 1331.0 
+  Valids: 483 
 -- Generation 14 --
-  Evaluated 369 individuals
-  Min 1342.0 
-  Valids: 369 
+  Evaluated 487 individuals
+  Min 1331.0 
+  Valids: 486 
 -- Generation 15 --
-  Evaluated 392 individuals
-  Min 1342.0 
-  Valids: 392 
+  Evaluated 481 individuals
+  Min 1331.0 
+  Valids: 478 
 -- Generation 16 --
-  Evaluated 373 individuals
-  Min 1342.0 
-  Valids: 373 
+  Evaluated 482 individuals
+  Min 1331.0 
+  Valids: 481 
 -- Generation 17 --
-  Evaluated 383 individuals
-  Min 1342.0 
-  Valids: 383 
+  Evaluated 476 individuals
+  Min 1331.0 
+  Valids: 476 
 -- Generation 18 --
-  Evaluated 375 individuals
-  Min 1342.0 
-  Valids: 375 
+  Evaluated 477 individuals
+  Min 1331.0 
+  Valids: 477 
 -- Generation 19 --
-  Evaluated 390 individuals
-  Min 1342.0 
-  Valids: 390 
+  Evaluated 467 individuals
+  Min 1331.0 
+  Valids: 467 
 -- Generation 20 --
-  Evaluated 393 individuals
-  Min 1342.0 
-  Valids: 393 
+  Evaluated 480 individuals
+  Min 1331.0 
+  Valids: 480 
 -- Generation 21 --
-  Evaluated 382 individuals
-  Min 1342.0 
-  Valids: 382 
+  Evaluated 490 individuals
+  Min 1331.0 
+  Valids: 488 
 -- Generation 22 --
-  Evaluated 377 individuals
-  Min 1342.0 
-  Valids: 377 
+  Evaluated 474 individuals
+  Min 1331.0 
+  Valids: 474 
 -- Generation 23 --
-  Evaluated 386 individuals
-  Min 1342.0 
-  Valids: 386 
+  Evaluated 486 individuals
+  Min 1331.0 
+  Valids: 486 
 -- Generation 24 --
-  Evaluated 382 individuals
-  Min 1342.0 
-  Valids: 382 
+  Evaluated 482 individuals
+  Min 1331.0 
+  Valids: 481 
 -- Generation 25 --
-  Evaluated 383 individuals
-  Min 1342.0 
-  Valids: 383 
+  Evaluated 475 individuals
+  Min 1331.0 
+  Valids: 474 
 -- Generation 26 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 385 
+  Evaluated 480 individuals
+  Min 1331.0 
+  Valids: 480 
 -- Generation 27 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 479 individuals
+  Min 1331.0 
+  Valids: 479 
 -- Generation 28 --
-  Evaluated 387 individuals
-  Min 1342.0 
-  Valids: 387 
+  Evaluated 470 individuals
+  Min 1331.0 
+  Valids: 469 
 -- Generation 29 --
-  Evaluated 382 individuals
-  Min 1342.0 
-  Valids: 382 
+  Evaluated 477 individuals
+  Min 1331.0 
+  Valids: 477 
 -- Generation 30 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 385 
+  Evaluated 497 individuals
+  Min 1331.0 
+  Valids: 497 
 -- Generation 31 --
-  Evaluated 380 individuals
-  Min 1342.0 
-  Valids: 378 
+  Evaluated 462 individuals
+  Min 1331.0 
+  Valids: 462 
 -- Generation 32 --
-  Evaluated 381 individuals
-  Min 1342.0 
-  Valids: 381 
+  Evaluated 481 individuals
+  Min 1331.0 
+  Valids: 481 
 -- Generation 33 --
-  Evaluated 386 individuals
-  Min 1342.0 
-  Valids: 386 
+  Evaluated 471 individuals
+  Min 1331.0 
+  Valids: 470 
 -- Generation 34 --
-  Evaluated 390 individuals
-  Min 1342.0 
-  Valids: 390 
+  Evaluated 471 individuals
+  Min 1331.0 
+  Valids: 471 
 -- Generation 35 --
-  Evaluated 393 individuals
-  Min 1342.0 
-  Valids: 393 
+  Evaluated 474 individuals
+  Min 1331.0 
+  Valids: 473 
 -- Generation 36 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 474 individuals
+  Min 1331.0 
+  Valids: 474 
 -- Generation 37 --
-  Evaluated 386 individuals
-  Min 1342.0 
-  Valids: 386 
+  Evaluated 471 individuals
+  Min 1331.0 
+  Valids: 471 
 -- Generation 38 --
-  Evaluated 387 individuals
-  Min 1342.0 
-  Valids: 387 
+  Evaluated 473 individuals
+  Min 1331.0 
+  Valids: 473 
 -- Generation 39 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 485 individuals
+  Min 1331.0 
+  Valids: 485 
 -- Generation 40 --
-  Evaluated 382 individuals
-  Min 1342.0 
-  Valids: 382 
+  Evaluated 483 individuals
+  Min 1331.0 
+  Valids: 482 
 -- Generation 41 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 478 individuals
+  Min 1331.0 
+  Valids: 477 
 -- Generation 42 --
-  Evaluated 373 individuals
-  Min 1342.0 
-  Valids: 372 
+  Evaluated 491 individuals
+  Min 1331.0 
+  Valids: 491 
 -- Generation 43 --
-  Evaluated 388 individuals
-  Min 1342.0 
-  Valids: 388 
+  Evaluated 466 individuals
+  Min 1331.0 
+  Valids: 466 
 -- Generation 44 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 471 individuals
+  Min 1331.0 
+  Valids: 471 
 -- Generation 45 --
-  Evaluated 388 individuals
-  Min 1342.0 
-  Valids: 388 
+  Evaluated 482 individuals
+  Min 1331.0 
+  Valids: 482 
 -- Generation 46 --
-  Evaluated 379 individuals
-  Min 1342.0 
-  Valids: 379 
+  Evaluated 483 individuals
+  Min 1331.0 
+  Valids: 483 
 -- Generation 47 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 481 individuals
+  Min 1331.0 
+  Valids: 480 
 -- Generation 48 --
-  Evaluated 374 individuals
-  Min 1342.0 
-  Valids: 374 
+  Evaluated 474 individuals
+  Min 1331.0 
+  Valids: 474 
 -- Generation 49 --
-  Evaluated 380 individuals
-  Min 1342.0 
-  Valids: 380 
+  Evaluated 479 individuals
+  Min 1331.0 
+  Valids: 479 
 -- Generation 50 --
-  Evaluated 387 individuals
-  Min 1342.0 
-  Valids: 387 
+  Evaluated 470 individuals
+  Min 1331.0 
+  Valids: 470 
 -- Generation 51 --
-  Evaluated 389 individuals
-  Min 1342.0 
-  Valids: 389 
+  Evaluated 477 individuals
+  Min 1331.0 
+  Valids: 477 
 -- Generation 52 --
-  Evaluated 393 individuals
-  Min 1342.0 
-  Valids: 393 
+  Evaluated 487 individuals
+  Min 1331.0 
+  Valids: 487 
 -- Generation 53 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 479 individuals
+  Min 1331.0 
+  Valids: 479 
 -- Generation 54 --
-  Evaluated 380 individuals
-  Min 1342.0 
-  Valids: 380 
+  Evaluated 476 individuals
+  Min 1331.0 
+  Valids: 475 
 -- Generation 55 --
-  Evaluated 390 individuals
-  Min 1342.0 
-  Valids: 390 
+  Evaluated 476 individuals
+  Min 1331.0 
+  Valids: 476 
 -- Generation 56 --
-  Evaluated 386 individuals
-  Min 1342.0 
-  Valids: 386 
+  Evaluated 483 individuals
+  Min 1331.0 
+  Valids: 482 
 -- Generation 57 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 476 individuals
+  Min 1331.0 
+  Valids: 476 
 -- Generation 58 --
-  Evaluated 388 individuals
-  Min 1342.0 
-  Valids: 388 
+  Evaluated 480 individuals
+  Min 1331.0 
+  Valids: 480 
 -- Generation 59 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 482 individuals
+  Min 1331.0 
+  Valids: 482 
 -- Generation 60 --
-  Evaluated 387 individuals
-  Min 1342.0 
-  Valids: 387 
+  Evaluated 478 individuals
+  Min 1331.0 
+  Valids: 478 
 -- Generation 61 --
-  Evaluated 381 individuals
-  Min 1342.0 
-  Valids: 381 
+  Evaluated 487 individuals
+  Min 1331.0 
+  Valids: 487 
 -- Generation 62 --
-  Evaluated 395 individuals
-  Min 1342.0 
-  Valids: 395 
+  Evaluated 481 individuals
+  Min 1331.0 
+  Valids: 481 
 -- Generation 63 --
-  Evaluated 375 individuals
-  Min 1342.0 
-  Valids: 375 
+  Evaluated 484 individuals
+  Min 1331.0 
+  Valids: 484 
 -- Generation 64 --
-  Evaluated 389 individuals
-  Min 1342.0 
-  Valids: 389 
+  Evaluated 473 individuals
+  Min 1331.0 
+  Valids: 472 
 -- Generation 65 --
-  Evaluated 392 individuals
-  Min 1342.0 
-  Valids: 392 
+  Evaluated 486 individuals
+  Min 1331.0 
+  Valids: 486 
 -- Generation 66 --
-  Evaluated 373 individuals
-  Min 1342.0 
-  Valids: 373 
+  Evaluated 481 individuals
+  Min 1331.0 
+  Valids: 481 
 -- Generation 67 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 385 
+  Evaluated 468 individuals
+  Min 1331.0 
+  Valids: 468 
 -- Generation 68 --
-  Evaluated 382 individuals
-  Min 1342.0 
-  Valids: 381 
+  Evaluated 472 individuals
+  Min 1331.0 
+  Valids: 472 
 -- Generation 69 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 484 individuals
+  Min 1331.0 
+  Valids: 484 
 -- Generation 70 --
-  Evaluated 381 individuals
-  Min 1342.0 
-  Valids: 381 
+  Evaluated 472 individuals
+  Min 1331.0 
+  Valids: 472 
 -- Generation 71 --
-  Evaluated 386 individuals
-  Min 1342.0 
-  Valids: 386 
+  Evaluated 480 individuals
+  Min 1331.0 
+  Valids: 480 
 -- Generation 72 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 385 
+  Evaluated 480 individuals
+  Min 1331.0 
+  Valids: 480 
 -- Generation 73 --
-  Evaluated 388 individuals
-  Min 1342.0 
-  Valids: 388 
+  Evaluated 475 individuals
+  Min 1331.0 
+  Valids: 474 
 -- Generation 74 --
-  Evaluated 378 individuals
-  Min 1342.0 
-  Valids: 378 
+  Evaluated 469 individuals
+  Min 1331.0 
+  Valids: 469 
 -- Generation 75 --
-  Evaluated 392 individuals
-  Min 1342.0 
-  Valids: 392 
+  Evaluated 465 individuals
+  Min 1331.0 
+  Valids: 465 
 -- Generation 76 --
-  Evaluated 387 individuals
-  Min 1342.0 
-  Valids: 387 
+  Evaluated 485 individuals
+  Min 1331.0 
+  Valids: 485 
 -- Generation 77 --
-  Evaluated 369 individuals
-  Min 1342.0 
-  Valids: 369 
+  Evaluated 482 individuals
+  Min 1331.0 
+  Valids: 481 
 -- Generation 78 --
-  Evaluated 374 individuals
-  Min 1342.0 
-  Valids: 374 
+  Evaluated 482 individuals
+  Min 1331.0 
+  Valids: 482 
 -- Generation 79 --
-  Evaluated 379 individuals
-  Min 1342.0 
-  Valids: 379 
+  Evaluated 466 individuals
+  Min 1331.0 
+  Valids: 466 
 -- Generation 80 --
-  Evaluated 378 individuals
-  Min 1342.0 
-  Valids: 378 
+  Evaluated 473 individuals
+  Min 1331.0 
+  Valids: 472 
 -- Generation 81 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 485 individuals
+  Min 1331.0 
+  Valids: 485 
 -- Generation 82 --
-  Evaluated 390 individuals
-  Min 1342.0 
-  Valids: 390 
+  Evaluated 478 individuals
+  Min 1331.0 
+  Valids: 478 
 -- Generation 83 --
-  Evaluated 379 individuals
-  Min 1342.0 
-  Valids: 379 
+  Evaluated 475 individuals
+  Min 1331.0 
+  Valids: 474 
 -- Generation 84 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 385 
+  Evaluated 479 individuals
+  Min 1331.0 
+  Valids: 478 
 -- Generation 85 --
-  Evaluated 384 individuals
-  Min 1342.0 
-  Valids: 384 
+  Evaluated 487 individuals
+  Min 1331.0 
+  Valids: 487 
 -- Generation 86 --
-  Evaluated 386 individuals
-  Min 1342.0 
-  Valids: 386 
+  Evaluated 481 individuals
+  Min 1331.0 
+  Valids: 481 
 -- Generation 87 --
-  Evaluated 375 individuals
-  Min 1342.0 
-  Valids: 374 
+  Evaluated 479 individuals
+  Min 1331.0 
+  Valids: 477 
 -- Generation 88 --
-  Evaluated 387 individuals
-  Min 1342.0 
-  Valids: 387 
+  Evaluated 486 individuals
+  Min 1331.0 
+  Valids: 484 
 -- Generation 89 --
-  Evaluated 392 individuals
-  Min 1342.0 
-  Valids: 391 
+  Evaluated 477 individuals
+  Min 1331.0 
+  Valids: 477 
 -- Generation 90 --
-  Evaluated 393 individuals
-  Min 1342.0 
-  Valids: 393 
+  Evaluated 480 individuals
+  Min 1331.0 
+  Valids: 480 
 -- Generation 91 --
-  Evaluated 378 individuals
-  Min 1342.0 
-  Valids: 378 
+  Evaluated 474 individuals
+  Min 1331.0 
+  Valids: 474 
 -- Generation 92 --
-  Evaluated 385 individuals
-  Min 1342.0 
-  Valids: 385 
+  Evaluated 471 individuals
+  Min 1331.0 
+  Valids: 471 
 -- Generation 93 --
-  Evaluated 378 individuals
-  Min 1342.0 
-  Valids: 378 
+  Evaluated 473 individuals
+  Min 1331.0 
+  Valids: 473 
 -- Generation 94 --
-  Evaluated 381 individuals
-  Min 1342.0 
-  Valids: 381 
+  Evaluated 473 individuals
+  Min 1331.0 
+  Valids: 472 
 -- Generation 95 --
-  Evaluated 388 individuals
-  Min 1342.0 
-  Valids: 388 
+  Evaluated 484 individuals
+  Min 1331.0 
+  Valids: 484 
 -- Generation 96 --
-  Evaluated 381 individuals
-  Min 1342.0 
-  Valids: 381 
+  Evaluated 493 individuals
+  Min 1331.0 
+  Valids: 493 
 -- Generation 97 --
-  Evaluated 390 individuals
-  Min 1342.0 
-  Valids: 389 
+  Evaluated 486 individuals
+  Min 1331.0 
+  Valids: 486 
 -- Generation 98 --
-  Evaluated 382 individuals
-  Min 1342.0 
-  Valids: 382 
+  Evaluated 476 individuals
+  Min 1331.0 
+  Valids: 476 
 -- Generation 99 --
-  Evaluated 379 individuals
-  Min 1342.0 
-  Valids: 379 
+  Evaluated 484 individuals
+  Min 1331.0 
+  Valids: 484 
 -- End of (successful) evolution --
  ======================== 
-  Min 1342.0
-  Max 1807.0
-  Avg 1485.86453202
-  Std 145.756355422
+  Min 1331.0
+  Max 1883.0
+  Avg 1520.42687747
+  Std 133.822930281
  ======================== 
-Best individual is [[2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [6, 27, 25, 19, 30, 42, 38, 36, 3, 12, 15, 44, 26, 5, 9, 10, 34, 33, 31, 1, 29, 24, 0, 37, 14, 23, 41, 8, 11, 32, 21, 20, 7, 4, 35, 40, 2, 18, 13, 43, 28, 39, 17, 22, 16], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], (1342.0,)
-Phenotype: ['DP', 'DP', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'PD', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'DP', 'DP', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'PD', 'D', 'D', 'D'] 
+Best individual is [[2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [16, 23, 31, 44, 39, 14, 37, 9, 34, 38, 2, 10, 15, 5, 35, 22, 19, 6, 21, 36, 0, 41, 13, 29, 4, 26, 28, 20, 11, 40, 17, 24, 7, 3, 33, 32, 25, 1, 42, 12, 18, 27, 30, 43, 8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], (1331.0,)
+Phenotype: ['DP', 'DP', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'PD', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'DP', 'DP', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'PD', 'D'] 
 
